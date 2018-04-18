@@ -7,7 +7,7 @@ defmodule Dictionary do
     "../assets/words.txt"
     |> Path.expand(__DIR__)
     |> File.read!()
-    |> String.split(~r/\n/)    
+    |> String.split(~r/\r\n/)    
   end
 
   def random_word() do
