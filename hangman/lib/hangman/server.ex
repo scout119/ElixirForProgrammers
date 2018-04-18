@@ -9,6 +9,7 @@ defmodule Hangman.Server do
   end
 
   def init(_) do
+    IO.puts "New game is created #{inspect self()}"
     { :ok, Game.new_game }
   end
 
