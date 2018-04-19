@@ -7,7 +7,8 @@ defmodule Gallows.Views.Helpers.GameStateHelper do
     :lost             => { :danger, "You Lost!" },
     :good_guess       => { :success, "Good guess!" },
     :bad_guess        => { :warning, "Bad guess!" },
-    :already_used     => { :info, "You already guessed that" }
+    :already_used     => { :info, "You already guessed that" },
+    :initializing     => { :info, "Good Luck!"}
   }
   
   def game_state(state) do
